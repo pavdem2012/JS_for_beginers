@@ -13,6 +13,14 @@ function testErrorFunc(a, func) {
     }
 }
 
+function testErrorFunc1(a, func) {
+    try {
+        func(a);
+    } catch (error) {
+        return error.name;
+    }
+}
+
 function func() {
     return a / 0
 }
